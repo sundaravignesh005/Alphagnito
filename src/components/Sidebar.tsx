@@ -1,5 +1,6 @@
 import SidebarItem from "./SidebarItem";
 import logo from "../assets/solacelogo.png";
+import dividerLine from "../assets/Line 85.png";
 
 import {
   LayoutGrid,
@@ -28,12 +29,21 @@ const Sidebar = ({ onClose }: SidebarProps) => {
       "
     >
     
-      <div className="flex items-center gap-2 mb-12 px-2">
-        <img src={logo} className="w-8 h-8" alt="Solace logo" />
-        <span className="text-white text-lg font-medium">Solace</span>
-      </div>
+      {/* LOGO */}
+<div className="flex items-center gap-2 px-2">
+  <img src={logo} className="w-8 h-8" alt="Solace logo" />
+  <span className="text-white text-lg font-medium">
+    Solace
+  </span>
+</div>
 
-      {/* MENU */}
+{/* DIVIDER IMAGE */}
+<img
+  src={dividerLine}
+  alt="divider"
+  className="w-full my-5 opacity-80"
+/>
+
       <nav className="flex flex-col gap-1">
         <SidebarItem
           to="/dashboard"
