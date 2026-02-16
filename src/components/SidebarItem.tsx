@@ -15,21 +15,20 @@ const SidebarItem = ({ label, icon, to, onClick }: SidebarItemProps) => {
       onClick={onClick}
       className={({ isActive }) =>
         `
-        group
         flex items-center gap-3
         px-5 py-3.5
         rounded-2xl
-        transition-all duration-200 ease-in-out
+        transition-all duration-200
         ${
           isActive
             ? `
-              bg-[linear-gradient(90deg,#EEF1F6_0%,#EEF1F6_70%,rgba(1,59,210,0.18)_100%)]
+              bg-[linear-gradient(90deg,#EEF1F6_0%,#EEF1F6_78%,rgba(1,59,210,0.12)_100%)]
               text-[#0B1530]
               font-medium
             `
             : `
               text-[#A0A7C2]
-              hover:bg-[linear-gradient(90deg,#EEF1F6_0%,#EEF1F6_70%,rgba(1,59,210,0.18)_100%)]
+              hover:bg-[linear-gradient(90deg,#EEF1F6_0%,#EEF1F6_78%,rgba(1,59,210,0.12)_100%)]
               hover:text-[#0B1530]
             `
         }
